@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Display Teste</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      .container {
+        width: 50%;
+        margin: auto;
+      }
+
+      .resultado {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .div-inline {
+        display: inline-block;
+        width: 49%;
+      }
+
+      .texto-direita {
+        text-align: right;
+      }
+
+      .margin-cima {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Titulo 1</h1>
+
+      <h1>Titulo 2</h1>
+
+      <div class="resultado">
+        <!-- Titulo -->
+        <h2>Valor:</h2>
+
+        <!-- Resultado 1 -->
+        <div class="div-inline">
+          <label for="resultado">Balanço</label>
+        </div>
+        <div class="div-inline texto-direita">
+          <span id="resultado">R$ 4.500,00</span>
+        </div>
+
+        <!-- Resultado 2 -->
+        <div class="div-inline">
+          <label for="resultado">Balanço</label>
+        </div>
+        <div class="div-inline texto-direita">
+          <span id="resultado">R$ 4.500,00</span>
+        </div>
+
+        <!-- Resultado 3 -->
+        <div class="div-inline">
+          <label for="resultado">Balanço</label>
+        </div>
+        <div class="div-inline texto-direita">
+          <span id="resultado">R$ 4.500,00</span>
+        </div>
+
+        <!-- Resultado final -->
+        <div class="div-inline margin-cima">
+          <label for="resultado">Balanço</label>
+        </div>
+        <div class="div-inline texto-direita">
+          <span id="resultado">R$ 4.500,00</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

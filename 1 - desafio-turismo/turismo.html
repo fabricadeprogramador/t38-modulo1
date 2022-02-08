@@ -21,6 +21,16 @@
         border-radius: 30px;
       }
 
+      .imagem-back {
+        background-image: url("canada.jpeg");
+        aspect-ratio: 16/9;
+        width: 60%;
+        margin: auto;
+        border-radius: 30px;
+        background-position: center;
+        background-size: cover;
+      }
+
       #container-imagem {
         text-align: center;
       }
@@ -31,7 +41,9 @@
 
     <div id="container-imagem">
       <a href="detalhes.html">
-        <img src="canada.jpeg" alt="Canada" class="card-imagem" />
+        <!-- <img src="canada.jpeg" alt="Canada" class="card-imagem" /> -->
+
+        <div class="imagem-back"></div>
       </a>
 
       <a href="detalhes2.html">
