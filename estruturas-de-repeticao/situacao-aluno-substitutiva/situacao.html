@@ -139,6 +139,11 @@
             </div>
 
             <div>
+              <label for="substitutiva">Substitutiva:</label>
+              <span id="substitutiva"></span>
+            </div>
+
+            <div>
               <label for="media">Média:</label>
               <span id="media"></span>
             </div>
@@ -180,6 +185,14 @@
 
         document.getElementById("notas").innerText = notas
       }
+    }
+
+    function reiniciar() {
+      notas = []
+      document.getElementById("entrada1").style = "display:block"
+      document.getElementById("entrada2").style = "display:none"
+      document.getElementById("saida-final").style = "display:none"
+      document.getElementById("notas").innerText = ""
     }
 
     function adicionarSubstitutiva() {
@@ -254,6 +267,8 @@
             document.getElementById("notas").innerText = notas.join(" , ")
             document.getElementById("maior").innerText = maior
             document.getElementById("menor").innerText = menor
+            document.getElementById("substitutiva").innerText =
+              notaSubConvertida
             document.getElementById("media").innerText = media.toFixed(2)
           }
         }
