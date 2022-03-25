@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo img {
+  width: 150px;
+}
+
+.titulo h1 {
+  font-weight: 800;
+  color: #0d87ff;
+}
+.tabuleiro {
+  margin: 50px auto;
+  width: 40%;
+}
+
+.linha {
+  display: flex;
+  text-align: center;
+}
+
+.coluna {
+  height: 150px;
+  width: 33%;
+  margin: 5px;
+  border: 3px solid gray;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+#vez {
+  text-align: center;
+  font-weight: bold;
+}
