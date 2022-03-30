@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Estacionamento</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Estacionamento</h1>
+
+    <div class="grupo-entrada">
+      <div class="entrada">
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" />
+      </div>
+      <div class="entrada">
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" />
+      </div>
+      <div class="entrada">
+        <label for="ano">Ano</label>
+        <input type="number" id="ano" />
+      </div>
+
+      <div class="entrada" id="container-botao">
+        <button onclick="adicionar()">Adicionar</button>
+      </div>
+
+      <div class="centralizar">
+        <button onclick="resultado()">Resultado</button>
+      </div>
+    </div>
+
+    <div class="resultado">
+      <div class="div-tabela">
+        <table id="tabela">
+          <thead>
+            <tr>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Ano</th>
+              <th>Excluir</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela"></tbody>
+        </table>
+      </div>
+      <div class="div-relatorio">
+        <div>
+          <label for="maisNovo">Carro mais novo:</label>
+          <span id="maisNovo"></span>
+        </div>
+        <div>
+          <label for="maisVelho">Carro mais velho:</label>
+          <span id="maisVelho"></span>
+        </div>
+        <div>
+          <label for="media">Média:</label>
+          <span id="media"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
