@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      .bg-titulo {
+        display: inline-block;
+        background-color: #a4d0fb;
+        padding: 2px 9px;
+        margin: 20px 0px;
+        color: white;
+      }
+
+      .bg-titulo h1 {
+        margin: 0px;
+      }
+
+      .container {
+        background-color: #d1e8fd;
+        width: 50%;
+        margin: auto;
+        padding: 50px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+      }
+
+      .container input {
+        border: 3px solid #95c8fa;
+        padding: 5px;
+        border-radius: 6px;
+        width: 100%;
+        margin: 10px 0px;
+      }
+
+      button {
+        background-color: #6fb7fe;
+        padding: 8px 15px;
+        margin: 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #aed3f9;
+      }
+
+      #botao-resto {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-titulo">
+      <h1>Calculadora</h1>
+    </div>
+
+    <div class="container">
+      <input type="number" placeholder="Número 1" id="numero1" />
+      <input type="number" placeholder="Número 2" id="numero2" />
+
+      <div class="botoes1">
+        <button onclick="soma()">+</button>
+        <button onclick="subtracao()">-</button>
+        <button onclick="multiplicacao()">*</button>
+        <button onclick="divisao()">/</button>
+      </div>
+      <button id="botao-resto" onclick="resto()">Resto</button>
+    </div>
+
+    <script>
+      function soma() {
+        let numero1 = document.getElementById("numero1").valueAsNumber
+        let numero2 = document.getElementById("numero2").valueAsNumber
+
+        let resultado = numero1 + numero2
+
+        alert("O resultado da soma é: " + resultado)
+      }
+      function subtracao() {}
+      function multiplicacao() {}
+      function divisao() {}
+      function resto() {}
+    </script>
+  </body>
+</html>

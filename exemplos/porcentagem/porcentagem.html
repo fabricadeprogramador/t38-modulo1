@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Cálculo da Porcentagem</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .container {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .container input {
+        padding: 5px;
+        border: 3px solid #cad6e2;
+        border-radius: 4px;
+        margin: 0px 10px;
+      }
+
+      .div-botao {
+        margin-top: 30px;
+      }
+
+      button {
+        background-color: #7d98b4;
+        padding: 5px;
+        border: 3px solid #cad6e2;
+        color: white;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      h1 {
+        margin-top: 0px;
+        color: #cad6e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quantos por cento?</h1>
+      <input type="number" placeholder="Número 1" id="numero1" />
+      <input type="number" placeholder="Número 2" id="numero2" />
+
+      <div class="div-botao">
+        <button onclick="calcularPorcentagem()">Calcular</button>
+      </div>
+    </div>
+
+    <script>
+      function calcularPorcentagem() {
+        let numero1 = document.getElementById("numero1").valueAsNumber
+        let numero2 = document.getElementById("numero2").valueAsNumber
+
+        let resultado = numero1 * (100 / numero2)
+
+        alert(numero1 + " é " + resultado + "% de " + numero2)
+      }
+    </script>
+  </body>
+</html>
