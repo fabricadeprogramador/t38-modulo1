@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Imprimir Lista</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/listaController.js"></script>
+  </head>
+  <body>
+    <div id="titulo-box">
+      <h1>Lista de Números</h1>
+    </div>
+
+    <div class="card">
+      <div class="entrada">
+        <label for="numeroDigitado">Digite a quantidade</label>
+        <input type="number" id="numeroDigitado" />
+      </div>
+
+      <button onclick="imprimirCrescente()">Imprimir Ordem Crescente</button>
+      <button onclick="imprimirDecrescente()">
+        Imprimir Ordem Decrescente
+      </button>
+    </div>
+
+    <div class="card" id="saida"></div>
+  </body>
+</html>
